@@ -2,25 +2,21 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
-  Generated class for the CocNew page.
+  Generated class for the Contact page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-coc-new',
-  templateUrl: 'coc-new.html'
+  selector: 'page-contact',
+  templateUrl: 'contact.html'
 })
-export class CocNewPage {
-
-
+export class Contact {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CocNewPage');
+    console.log('ionViewDidLoad Contact');
   }
-
-  
 
 }

@@ -5,36 +5,24 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>coc-nav</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Certificate of Currency</ion-title>
   </ion-navbar>
-
 </ion-header>
+
 
 
 <ion-content padding>
 
   <ion-list>
-
-  <ion-item>
-    <ion-icon name="ios-create" item-left></ion-icon>
-      Request New Statement
-   
-  </ion-item>
-
-   <ion-item>
-    <ion-icon name="md-list" item-left></ion-icon>
-      Previous Statements
-   
-  </ion-item>
-
-   <ion-item>
-    <ion-icon name="ios-time" item-left></ion-icon>
-      Current Schedules
-    
-  </ion-item>
-
-</ion-list>
+    <button ion-item *ngFor="let coc of cocLinks "
+      (click)="goToPage(coc.component)">
+      <ion-icon [name]="coc.icon" item-left></ion-icon>
+      {{ coc.title }}
+    </button>  
+  </ion-list>
 
 </ion-content>

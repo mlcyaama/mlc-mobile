@@ -5,6 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
+import { Contact } from '../pages/contact/contact';
+import { Login } from '../pages/login/login';
 import { StatementsLettersPage } from '../pages/statements-letters/statements-letters';
 
 
@@ -24,11 +26,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
       this.pages = [
+
       { icon: 'heart-outline', title: 'My policy', component: MyPolicy },
       { icon: 'contact', title: 'Personal details', component: PersonalDetails },
       { icon: 'mail', title: 'Statements and letters', component: StatementsLettersPage },
-      { icon: 'call', title: 'Information', component: MyPolicy },
-      { icon: 'power', title: 'Logout', component: MyPolicy },
+      { icon: 'call', title: 'Contact Us', component: Contact },
+      { icon: 'power', title: 'Logout', component: Login },
+
 
     ];
   
