@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
+import { StatementsLettersPage } from '../pages/statements-letters/statements-letters';
 
 
 @Component({
@@ -28,6 +29,7 @@ export class MyApp {
       { icon: 'mail', title: 'Statements and letters', component: MyPolicy },
       { icon: 'call', title: 'Information', component: MyPolicy },
       { icon: 'power', title: 'Logout', component: MyPolicy },
+
     ];
   
   }
