@@ -26,10 +26,10 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
       this.pages = [
-      { icon: 'contact', title: 'My policy', component: MyPolicy },
-      { icon: 'call', title: 'Personal details', component: PersonalDetails },
+
+      { icon: 'heart-outline', title: 'My policy', component: MyPolicy },
+      { icon: 'contact', title: 'Personal details', component: PersonalDetails },
       { icon: 'mail', title: 'Statements and letters', component: StatementsLettersPage },
-      { icon: 'call', title: 'Information', component: MyPolicy },
       { icon: 'call', title: 'Contact Us', component: Contact },
       { icon: 'power', title: 'Logout', component: Login },
 

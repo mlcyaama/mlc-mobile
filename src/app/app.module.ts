@@ -20,6 +20,7 @@ import { Contact } from '../pages/contact/contact';
 import { Login } from '../pages/login/login';
 
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -36,7 +37,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CocNewPage,
     Contact,
     Login,
-    StatementsLettersPage,
     PremiumsPaidPage,
     RenewalNoticePage,
     CorrespondencePage
@@ -58,11 +58,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CocNewPage,
     Contact,
     Login,
-    StatementsLettersPage,
     CorrespondencePage,
     RenewalNoticePage,
-    PremiumsPaidPage
-
+    PremiumsPaidPage,
   ],
   providers: [
     StatusBar,
