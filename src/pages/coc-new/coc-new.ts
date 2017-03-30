@@ -13,10 +13,14 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CocNewPage {
 
+
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CocNewPage');
   }
+
+  
 
 }

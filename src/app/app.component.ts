@@ -27,7 +27,7 @@ export class MyApp {
 
       { icon: 'contact', title: 'My policy', component: MyPolicy },
       { icon: 'call', title: 'Personal details', component: PersonalDetails },
-      { icon: 'mail', title: 'Statements and letters', component: MyPolicy },
+      { icon: 'mail', title: 'Statements and letters', component: StatementsLettersPage },
       { icon: 'call', title: 'Information', component: MyPolicy },
       { icon: 'power', title: 'Logout', component: MyPolicy },
 

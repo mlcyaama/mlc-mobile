@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { CocNavPage } from '../coc-nav/coc-nav';
+import { PolicySchedulePage } from '../policy-schedule/policy-schedule';
 /*
   Generated class for the StatementsLetters page.
 
@@ -16,9 +17,9 @@ import { NavController, NavParams } from 'ionic-angular';
 export class StatementsLettersPage {
 
     itemLinks = [
-      { icon: 'ios-create', title: 'Certificate of Currency', component: 'CocNavPage' },
+      { icon: 'ios-create', title: 'Certificate of Currency', component: CocNavPage },
       { icon: 'md-list', title: 'Payment Notice', component: '' },
-      { icon: 'ios-time', title: 'Policy Schedule', component: '' },
+      { icon: 'ios-time', title: 'Policy Schedule', component: PolicySchedulePage },
       { icon: 'ios-cash', title: 'Premiums Paid', component: '' },
       { icon: 'ios-book', title: 'Other Correspondence', component: '' },
     ];
@@ -30,7 +31,12 @@ export class StatementsLettersPage {
   }
 
   goToPage(page){
-   this.navCtrl.push(page);
+
+   
+      this.navCtrl.push(page);
+    
+   
+   //this.navCtrl.push(page);
 
     console.log("Selected Page : " + page);
   }

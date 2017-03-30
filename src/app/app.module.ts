@@ -3,7 +3,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
-import { StatementsLettersPage } from '../pages/statements-letters/statements-letters'
+import { StatementsLettersPage } from '../pages/statements-letters/statements-letters';
+
+import { CocNavPage } from '../pages/coc-nav/coc-nav';
+import { CocNewPage } from '../pages/coc-new/coc-new';
+import { CocPastPage } from '../pages/coc-past/coc-past';
+import { CocSchedulesPage } from '../pages/coc-schedules/coc-schedules';
+
+import { PolicySchedulePage } from '../pages/policy-schedule/policy-schedule';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,6 +21,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyPolicy,
     PersonalDetails,
     StatementsLettersPage,
+    PolicySchedulePage,
+    CocNavPage,
+    CocPastPage,
+    CocSchedulesPage,
+    CocNewPage,
+    
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,6 +37,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyPolicy,
     PersonalDetails,
     StatementsLettersPage,
+    PolicySchedulePage,
+    CocNavPage,
+    CocPastPage,
+    CocSchedulesPage,
+    CocNewPage
 
   ],
   providers: [
