@@ -3,8 +3,11 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
+
 import { Contact } from '../pages/contact/contact';
 import { Login } from '../pages/login/login';
+import { StatementsLettersPage } from '../pages/statements-letters/statements-letters'
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyPolicy,
     PersonalDetails,
     Contact,
-    Login
+    Login,
+    StatementsLettersPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyPolicy,
     PersonalDetails,
     Contact,
-    Login
+    Login,
+    StatementsLettersPage
+
   ],
   providers: [
     StatusBar,

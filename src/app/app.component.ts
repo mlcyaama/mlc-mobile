@@ -7,6 +7,7 @@ import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
 import { Contact } from '../pages/contact/contact';
 import { Login } from '../pages/login/login';
+import { StatementsLettersPage } from '../pages/statements-letters/statements-letters';
 
 
 @Component({
@@ -25,11 +26,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
       this.pages = [
-      { icon: 'wifi', title: 'My policy', component: MyPolicy },
-      { icon: 'wifi', title: 'Personal details', component: PersonalDetails },
-      { icon: 'wifi', title: 'Statements and letters', component: MyPolicy },
-      { icon: 'wifi', title: 'Contact Us', component: Contact },
-      { icon: 'wifi', title: 'Logout', component: Login }
+      { icon: 'contact', title: 'My policy', component: MyPolicy },
+      { icon: 'call', title: 'Personal details', component: PersonalDetails },
+      { icon: 'mail', title: 'Statements and letters', component: MyPolicy },
+      { icon: 'call', title: 'Contact Us', component: Contact },
+      { icon: 'power', title: 'Logout', component: Login },
+
     ];
   
   }
