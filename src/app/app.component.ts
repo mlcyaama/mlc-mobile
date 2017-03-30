@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyPolicy } from '../pages/myPolicy/myPolicy';
 import { PersonalDetails } from '../pages/personalDetails/personalDetails';
+import { StatementsLettersPage } from '../pages/statements-letters/statements-letters';
 
 
 @Component({
@@ -25,7 +26,7 @@ export class MyApp {
       this.pages = [
       { icon: 'wifi', title: 'My policy', component: MyPolicy },
       { icon: 'wifi', title: 'Personal details', component: PersonalDetails },
-      { icon: 'wifi', title: 'Statements and letters', component: MyPolicy },
+      { icon: 'wifi', title: 'Statements and letters', component: StatementsLettersPage },
       { icon: 'wifi', title: 'Information', component: MyPolicy },
       { icon: 'wifi', title: 'Logout', component: MyPolicy },
     ];
