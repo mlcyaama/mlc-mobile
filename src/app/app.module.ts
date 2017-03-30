@@ -27,7 +27,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     MyPolicy,
     PersonalDetails,
-
     StatementsLettersPage,
     PolicySchedulePage,
     CocNavPage,
@@ -51,7 +50,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CocPastPage,
     CocSchedulesPage,
     CocNewPage,
-    Login
+    Contact,
+    Login,
+    StatementsLettersPage
   ],
   providers: [
     StatusBar,
