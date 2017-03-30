@@ -23,11 +23,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
       this.pages = [
-      { icon: 'wifi', title: 'My policy', component: MyPolicy },
-      { icon: 'wifi', title: 'Personal details', component: PersonalDetails },
-      { icon: 'wifi', title: 'Statements and letters', component: MyPolicy },
-      { icon: 'wifi', title: 'Information', component: MyPolicy },
-      { icon: 'wifi', title: 'Logout', component: MyPolicy },
+      { icon: 'contact', title: 'My policy', component: MyPolicy },
+      { icon: 'call', title: 'Personal details', component: PersonalDetails },
+      { icon: 'mail', title: 'Statements and letters', component: MyPolicy },
+      { icon: 'call', title: 'Information', component: MyPolicy },
+      { icon: 'power', title: 'Logout', component: MyPolicy },
     ];
   
   }

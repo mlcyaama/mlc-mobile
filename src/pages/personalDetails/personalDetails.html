@@ -3,21 +3,63 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page Two</ion-title>
+    <ion-title>Personal details</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+<ion-content padding>
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="arrow-dropdown"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="create"></ion-icon></button>
+     
+    </ion-fab-list>
+  </ion-fab>
+
+   
+<ion-list>
+ <ion-list-header>
+    My details
+  </ion-list-header>
+  <ion-item>
+    <h2>Street address : 25 Star wars crescent, Death star</h2>    
+    <p>Mobile : </p>
+    <p>Email : </p>
+    DOB
+    
+    Work
+    Customer number
+    bsb
+    account
+  </ion-item>
+
+  <ion-item>
+    <p>Customer number</p>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary" fixed>Street address :</ion-label>
+    <ion-label stacked > </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked >Mobile number : </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked >Email address : </ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked >Date of birth : </ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </ion-item>
+ </ion-list>
+
+ 
+
+  
 </ion-content>
