@@ -26,7 +26,7 @@ export class MyApp {
       this.pages = [
       { icon: 'heart-outline', title: 'My policy', component: MyPolicy },
       { icon: 'contact', title: 'Personal details', component: PersonalDetails },
-      { icon: 'mail', title: 'Statements and letters', component: MyPolicy },
+      { icon: 'mail', title: 'Statements and letters', component: StatementsLettersPage },
       { icon: 'call', title: 'Information', component: MyPolicy },
       { icon: 'power', title: 'Logout', component: MyPolicy },
 
