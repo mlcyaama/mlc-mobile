@@ -14,3 +14,27 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.header{
+    color: whitesmoke;
+    background: rgb(0, 176, 185);
+}
+
+.mlc-nav{
+    background: #004f59;
+    color: whitesmoke;
+}
+
+.mlc-main-nav{
+    background: rgb(0, 176, 185);
+}
+
+.sub-heading{
+    background: orange;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.pad20{
+    padding:10px;
+}

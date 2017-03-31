@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Request New Statement</ion-title>
   </ion-navbar>
 
@@ -14,19 +14,54 @@
 
 
 <ion-content padding>
-  <ion-card>
-
-  <ion-card-content>
-    Fill out the form to schedule a new Certificate of Currency
-  </ion-card-content>
-
-</ion-card>
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="ios-mail-open"></ion-icon></button>
+      <button ion-fab><ion-icon name="ios-paper"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 
    <ion-list>
-    <ion-item>
-      <ion-input placeholder="Nickname for Statement"></ion-input>
-    </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Nickname for Request</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>Recipient</ion-label>
+  <ion-select [(ngModel)]="recipient">
+    <ion-option value="none">None</ion-option>
+    <ion-option value="westpac" selected="true">Westpac</ion-option>
+    <ion-option value="amp">AMP</ion-option>
+  </ion-select>
+</ion-item>
+
+  <ion-item>
+    <ion-label>Schedule this request</ion-label>
+    <ion-select [(ngModel)]="schedule">
+      <ion-option value="yes">Yes</ion-option>
+      <ion-option value="no">No</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>State Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="startDate"></ion-datetime>
+</ion-item>
+
+<ion-item>
+  <ion-label>End Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="endDate"></ion-datetime>
+</ion-item>
+
+  <ion-item>
+    <ion-label>Do you accept the <a href="http://mlc.com.au">Terms and Conditions</a></ion-label>
+    <ion-checkbox [(ngModel)]="accept"></ion-checkbox>
+  </ion-item>
+
   </ion-list>
 
-
+  <button ion-button block>Submit</button>
 </ion-content>

@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,34 +7,41 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 <ion-list> 
-   <ion-list-header>
+   <ion-list-header class="header">
     Life Insured
   </ion-list-header>
    <ion-item>
     <h2>Tony Smith</h2>    
   
   </ion-item>
-  <ion-list-header>
+  <ion-list-header class="header">
     Insurance
   </ion-list-header>
+    <ion-card>
   <ion-item>
-    <h2>Life Cover</h2>    
-    <p>Coverage Amount : $300,000</p>
-    <p>Premium Amount : $150.76</p>
+    <h2 class="sub-heading">Life Cover</h2>    
+    <p class="pad20">Coverage Amount : <ion-badge item-right>$300,000</ion-badge></p>
+    <p class="pad20">Premium Amount : <ion-badge item-right>$150.76</ion-badge></p>
   </ion-item>
+    </ion-card>
+
+    <ion-card>
   <ion-item>
-    <h2>Total Permanent Disability Cover</h2>    
-    <p>Coverage Amount : $200,000</p>
-    <p>Premium Amount : $68.76</p>
+    <h2 class="sub-heading">Total Permanent Disability Cover</h2>    
+    <p class="pad20">Coverage Amount : <ion-badge item-right>$200,000</ion-badge></p>
+    <p class="pad20">Premium Amount : <ion-badge item-right>$68.76</ion-badge></p>
   </ion-item>
+ </ion-card>
+  <ion-card>
   <ion-item>
-    <h2>Income Protection Cover</h2>    
-    <p>Coverage Amount : $10,700</p>
-    <p>Premium Amount : $120.76</p>
+    <h2 class="sub-heading">Income Protection Cover</h2>    
+    <p class="pad20">Coverage Amount : <ion-badge item-right>$10,700</ion-badge></p>
+    <p class="pad20">Premium Amount : <ion-badge item-right>$120.76</ion-badge></p>
   </ion-item>
-  <ion-list-header>
+   </ion-card>
+  <ion-list-header class="header" text-wrap>
     Total Premium payable monthly $405
   </ion-list-header>
 </ion-list>

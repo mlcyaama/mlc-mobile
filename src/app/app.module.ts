@@ -14,7 +14,6 @@ import { CocSchedulesPage } from '../pages/coc-schedules/coc-schedules';
 import { PolicySchedulePage } from '../pages/policy-schedule/policy-schedule';
 import { CorrespondencePage } from '../pages/correspondence/correspondence';
 import { PremiumsPaidPage } from '../pages/premiums-paid/premiums-paid';
-import { RenewalNoticePage } from '../pages/renewal-notice/renewal-notice';
 
 import { Contact } from '../pages/contact/contact';
 import { Login } from '../pages/login/login';
@@ -38,7 +37,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Contact,
     Login,
     PremiumsPaidPage,
-    RenewalNoticePage,
     CorrespondencePage
 
   ],
@@ -59,7 +57,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Contact,
     Login,
     CorrespondencePage,
-    RenewalNoticePage,
     PremiumsPaidPage,
   ],
   providers: [
