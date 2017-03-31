@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PostsService } from '../../app/Services/post.service';
 
 /*
   Generated class for the CocPast page.
@@ -9,14 +10,27 @@ import { NavController, NavParams } from 'ionic-angular';
 */
 @Component({
   selector: 'page-coc-past',
-  templateUrl: 'coc-past.html'
+  templateUrl: 'coc-past.html',
+  providers: [PostsService]
 })
 export class CocPastPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+    posts: Post[];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private postsService: PostsService) {
+      this.postsService.getIncomeProtection().subscribe(posts => {
+        this.posts = posts;
+    });
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CocPastPage');
   }
+}
+
+    interface Post{
+    id: number;
+    name: string;
+    description: string;
 
 }

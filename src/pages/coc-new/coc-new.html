@@ -21,7 +21,7 @@
       <button ion-fab><ion-icon name="ios-paper"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
-
+ 
    <ion-list>
 
   <ion-item>
@@ -47,7 +47,7 @@
   </ion-item>
 
   <ion-item>
-  <ion-label>State Date</ion-label>
+  <ion-label>Start Date</ion-label>
   <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="startDate"></ion-datetime>
 </ion-item>
 
@@ -63,5 +63,6 @@
 
   </ion-list>
 
-  <button ion-button block>Submit</button>
+  <button ion-button block type="submit" (click)="newSub()">Submit</button>
+
 </ion-content>

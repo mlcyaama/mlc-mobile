@@ -16,7 +16,7 @@ import { StatementsLettersPage } from '../pages/statements-letters/statements-le
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MyPolicy;
+  rootPage: any = Login;
 
   pages: Array<{icon: string, title: string, component: any}>;
 

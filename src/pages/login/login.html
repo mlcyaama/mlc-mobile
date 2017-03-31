@@ -14,6 +14,11 @@ You are logged out, please enter your details to log in<br>
   
 <ion-list>
 
+    <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="number" value=""></ion-input>
+  </ion-item>
+
   <ion-item>
     <ion-label stacked>Username</ion-label>
     <ion-input type="text"></ion-input>
@@ -24,7 +29,7 @@ You are logged out, please enter your details to log in<br>
     <ion-input type="password"></ion-input>
   </ion-item>
   <ion-item>
-    <button ion-button >Login</button>
+    <button ion-button (click)="goToPage()">Login</button>
   </ion-item>  
 
 </ion-list>

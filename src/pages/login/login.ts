@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MyPolicy } from '../myPolicy/myPolicy';
 
 /*
   Generated class for the Login page.
@@ -19,7 +20,13 @@ export class Login {
     console.log('ionViewDidLoad Login');
   }
   
+  goToPage(page){
 
+   
+      this.navCtrl.push(MyPolicy);
+      this.navCtrl.setRoot(MyPolicy);
+    
+  }
   
   
 

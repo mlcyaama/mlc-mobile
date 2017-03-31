@@ -15,25 +15,12 @@
 
 <ion-content>
 
-  <ion-card>
-
-  <ion-item>
-    <h2>MLC Protection - Life 19</h2>
-    <p>November 5, 1955</p>
-  </ion-item>
-
-
-  <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-  </ion-card-content>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name=""></ion-icon>
-        <div>Sent</div>
-      </button>
-    </ion-col>
+  
+   <div *ngFor="let post of posts">
+       <ion-card>
+        <h3 class="sub-heading">{{post.name}}</h3>
+        <p class="pad20">{{post.description}}</p>
+        <ion-row>
     <ion-col>
       <button ion-button icon-left clear small>
         <ion-icon name=""></ion-icon>
@@ -42,80 +29,15 @@
     </ion-col>
     <ion-col center text-center>
       <ion-note>
-        11h ago
+        Just Now
       </ion-note>
     </ion-col>
     
   </ion-row>
+       </ion-card>
+  </div>
 
-</ion-card>
+  <h4>Above information is being generated from mlc-api</h4>
 
-  <ion-card>
-
-  <ion-item>
-    <h2>MLC Protection - Life 20</h2>
-    <p>November 5, 2015</p>
-  </ion-item>
-
-
-  <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-  </ion-card-content>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name=""></ion-icon>
-        <div>Sent</div>
-      </button>
-    </ion-col>
-     <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name=""></ion-icon>
-        <div>Download</div>
-      </button>
-    </ion-col>
-    <ion-col center text-center>
-      <ion-note>
-        40days ago
-      </ion-note>
-    </ion-col>
-  </ion-row>
-
-</ion-card>
-
-  <ion-card>
-
-  <ion-item>
-    <h2>MLC Protection - Life 23</h2>
-    <p>November 5, 1985</p>
-  </ion-item>
-
-
-  <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-  </ion-card-content>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name=""></ion-icon>
-        <div>Not Sent</div>
-      </button>
-    </ion-col>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name=""></ion-icon>
-        <div>Download</div>
-      </button>
-    </ion-col>
-    <ion-col center text-center>
-      <ion-note>
-        1 year ago
-      </ion-note>
-    </ion-col>
-  </ion-row>
-
-</ion-card>
 
 </ion-content>
